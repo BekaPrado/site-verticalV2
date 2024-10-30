@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para o header */
+header {
+    position: fixed;
+    background-color: #ffb0d7;
+    width: 100vw;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+header nav a {
+    color: white;
+    padding: 8px;
+    transition: background-color 1s;
+}
+
+header nav a:hover {
+    background-color: rgb(255, 152, 234);
+    color: rgb(255, 0, 212);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+}
+
+/* Layout para a seção Tulipas */
+#tulipas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fde2e2;
+}
+
+#tulipas .imagens {
+    order: 2;
+    margin-left: 30px;
+}
+
+#tulipas .texto {
+    order: 1;
+    margin-right: 30px;
+}
+
+/* Layout para a seção Peônias */
+#peonias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9d8d8;
+}
+
+#peonias .imagens {
+    order: 2;
+    margin-left: 30px;
+}
+
+#peonias .texto {
+    order: 1;
+    margin-right: 30px;
+}
+
+/* Layout para a seção Rosas */
+#rosas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fde2e2;
+}
+
+#rosas .imagens {
+    order: 1;
+    margin-right: 30px;
+}
+
+#rosas .texto {
+    order: 2;
+    margin-left: 30px;
+}
+
+/* Layout para a seção Jasmin */
+#jasmin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9d8d8;
+}
+
+#jasmin .imagens {
+    order: 2;
+    margin-left: 30px;
+}
+
+#jasmin .texto {
+    order: 1;
+    margin-right: 30px;
+}
+
+/* Layout para a seção Hortência */
+#hortencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fde2e2;
+}
+
+#hortencia .imagens {
+    order: 1;
+    margin-right: 30px;
+}
+
+#hortencia .texto {
+    order: 2;
+    margin-left: 30px;
+}
+
+/* Estilos para o container das imagens */
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.imagens img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Estilos para o texto */
+.texto h1 {
+    font-size: 100px;
+    color: white;
+}
