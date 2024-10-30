@@ -47,7 +47,7 @@ section {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    padding: 0 50px;
+    padding: 0 150px; /* Espaçamento adicional nas laterais */
 }
 
 /* Layout para a seção Tulipas */
