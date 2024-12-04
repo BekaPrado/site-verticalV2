@@ -1,160 +1,213 @@
-/* Reset básico */
-* {
+ /* Reseta margens e paddings padrão */
+ * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Remoção de decorações padrão */
 a {
     text-decoration: none;
-    font-size: 20px;
+    color: inherit;
 }
 
 ul, ol, li {
     list-style: none;
 }
 
-html, body {
+/* Estilo do corpo */
+body {
+    font-family: "Quicksand", sans-serif;
     scroll-behavior: smooth;
+    background-color: white;
+    color: #333;
 }
 
-/* Estilos para o header */
+/* Menu fixo */
 header {
+    background-color: #fefefe;
     position: fixed;
-    background-color: #ffb0d7;
     width: 100vw;
-}
-
-header nav ul {
+    height: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 1%;
+}
+
+.logo img {
+    height: 180px;
+    margin-left: -20px;
+}
+
+/* Estilo dos links do menu */
+header nav ul {
+    display: flex;
+    align-items: center;
+    padding: 5px;
 }
 
 header nav a {
-    color: white;
-    padding: 8px;
-    transition: background-color 1s;
+    font-weight: bold;
+    color: #211b15;
+    padding: 10px 20px;
+    transition: background-color 1s, color 0.3s;
+    margin-right: 20px;
 }
 
+header nav a:last-child {
+    margin-right: 0;
+}
+
+/* Hover nos links */
 header nav a:hover {
-    background-color: rgb(255, 152, 234);
-    color: rgb(255, 0, 212);
+    color: white;
+    background-color: #E9DEF2;
 }
 
-section {
+/* Retângulo */
+main {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 0 150px; /* Espaçamento adicional nas laterais */
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding-top: 150px; /* Espaço para o menu fixo */
 }
 
-/* Layout para a seção Tulipas */
-#tulipas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fde2e2;
+.retangulo {
+    background-color: #E9DEF2;
+    color: white;
+    width: 100%;
+    max-width: 1800px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#tulipas .imagens {
-    order: 2;
-    margin-left: 30px;
+.retangulo h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-#tulipas .texto {
-    order: 1;
-    margin-right: 30px;
+.retangulo p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
-/* Layout para a seção Peônias */
-#peonias {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f9d8d8;
+/* Estilo das caixas de texto */
+.text-box {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px; /* Espaçamento entre as caixas */
 }
 
-#peonias .imagens {
-    order: 2;
-    margin-left: 30px;
+
+/* Estilos específicos para cada caixa de texto */
+.text-box-um {
+    background-color: #f046d01e;
+    width: 1000px;
+}
+.text-box-um h2{
+    color: purple;
+}
+.text-box-um img{
+    width: 130px;
+}
+.text-box-um p{
+    color: rgb(255, 255, 255);
+}
+/*__________________*/
+.text-box-dois {
+    background-color: #f046d01e;
+    width: 900px;
+    margin-left: 800px;
+}
+.text-box-dois h2{
+    color: purple;
+}
+.text-box-dois p{
+    color: rgb(254, 254, 254);
 }
 
-#peonias .texto {
-    order: 1;
-    margin-right: 30px;
+/*_______________*/
+.text-box-tres {
+    background-color:  #f046d01e;
+    width: 900px;
+    
 }
-
-/* Layout para a seção Rosas */
-#rosas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fde2e2;
+.text-box-tres h2{
+    color: purple;
 }
-
-#rosas .imagens {
-    order: 1;
-    margin-right: 30px;
+.text-box-tres p{
+    color: white;
 }
-
-#rosas .texto {
-    order: 2;
-    margin-left: 30px;
+.text-box-tres img{
+    width: 130px;
 }
-
-/* Layout para a seção Jasmin */
-#jasmin {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f9d8d8;
+/*_________________*/
+.text-box-quatro {
+    background-color: #f046d01e;
+    width: 900px;
+    margin-left: 800px;
 }
-
-#jasmin .imagens {
-    order: 2;
-    margin-left: 30px;
+.text-box-quatro h2{
+    color: purple;
 }
-
-#jasmin .texto {
-    order: 1;
-    margin-right: 30px;
+.text-box-quatro{
+    color: white;
 }
-
-/* Layout para a seção Hortência */
-#hortencia {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fde2e2;
+.text-box-quatro img{
+    width: 130px;
 }
-
-#hortencia .imagens {
-    order: 1;
-    margin-right: 30px;
+/*__________*/
+.text-box-cinco {
+    background-color:  #f046d01e;
+    width: 900px;
 }
-
-#hortencia .texto {
-    order: 2;
-    margin-left: 30px;
+.text-box-cinco h2{
+    color: purple;
 }
-
-/* Estilos para o container das imagens */
-.imagens {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+.text-box-cinco p{
+    color: white;
 }
-
-.imagens img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+.text-box-cinco img{
+    width: 130px;
 }
-
-/* Estilos para o texto */
-.texto h1 {
-    font-size: 100px;
+/*__________*/
+.text-box-seis {
+    background-color: #f046d01e;
+    width: 900px;
+    margin-left: 800px;
+}
+.text-box-seis h2{
+    color: purple;
+}
+.text-box-seis p{
+    color: white;
+}
+.text-box-seis img{
+    width: 130px;
+}
+/*__________*/
+.text-box-sete {
+    background-color:  #f046d01e;
+    width: 900px;
+}
+.text-box-sete h2{
+    color: purple;
+}
+.text-box-sete p{
     color: white;
 }
